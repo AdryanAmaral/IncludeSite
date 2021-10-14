@@ -1,0 +1,456 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+a{text-decoration: none; color: black; font-family: "Work Sans",sans-serif; font-size: 12px;}
+p{color: black; font-family: "Work Sans",sans-serif; font-size: 12px;}
+ul{list-style: none;}
+h2{font-family: 'Yantramanav', sans-serif;font-weight: 900;}
+h3{font-family: 'Yantramanav', sans-serif;font-weight: 700;}
+/*
+#4f000f
+#ea042f
+*/
+body{
+	overflow-x: hidden;
+}
+}
+html {
+  scroll-behavior: smooth;
+}
+#nav_bar{
+	width: 100%;
+	height: 50px;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 900;
+	font-size: 	12px;
+	color: #1d1d1d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	color: #4f000f;
+}
+
+/*========================================================================*/
+/*========================================================================*/
+
+#banner_div{
+	width: 100%;
+	height: 210px;
+	background: #ea042f;
+	background: url(../assets/bg1.png)center center/ cover no-repeat;
+}
+#banner{
+	max-width: 	600px;
+	width: 100%;
+	background: transparent;
+	display: flex;
+	margin-left: 	auto;
+	margin-right: 	auto;
+	flex-direction: column;
+	padding: 20px 0 20px 0;
+}
+.chat_balloon{
+	margin: 10px;
+	max-width: 250px;
+	background: white;
+	border-radius: 50px;
+	padding: 5px 20px 5px 20px;
+	display: flex;
+	align-items: center;
+}
+#chat_2{
+	margin-left: auto;
+}
+#chat_2 input{
+	margin: 0px 5px 0px 5px;
+	width: 100px;
+	float: right;
+	border: 0px;
+	-webkit-appearance: none;
+	border-width:0px;
+	font-family: "Work Sans",sans-serif; font-size: 12px;
+}
+#chat_2 ::placeholder {
+  color: #ea042f;
+}
+
+#chat_3{
+	display: none;
+}
+
+/*========================================================================*/
+/*========================================================================*/
+#perfil{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+#profile_pic{
+	width: 200px;
+	height: 200px;
+	background: url(../assets/Perfil.png)center center/ cover no-repeat;
+	border-radius: 200px;
+}
+#text_gradient{
+	max-width: 350px;
+	width: 80%;
+
+}
+#text_gradient p{
+	margin-bottom: 100px;
+	background: -webkit-linear-gradient(#333, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#naoleio{
+	width: 300px;
+	height: 300px;
+	background: url(../assets/naoleiotextao.png)center center/ cover no-repeat;
+}
+
+/*========================================================================*/
+/*========================================================================*/
+#musicas{
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#playlist{
+	width: 400px;
+	height: 300px;
+	background: url(../assets/cassete.png)center center/ cover no-repeat;
+}
+#musica_desc{
+	width: 80%;
+	max-width: 350px;
+}
+
+/*========================================================================*/
+/*========================================================================*/
+
+/*BOTÃO SCROLL TO TOP*/
+html {
+  scroll-behavior: smooth;/*deixa o scroll leve*/
+}
+#goToTop {
+	width: 50px;
+	height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(217, 217, 217,0.5);
+  color: #1d1d1d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#goToTop i{
+	cursor: pointer;
+	transition: color 0.2s ease-out;
+}
+
+#goToTop:hover {
+ color: #ea042f;
+}
+
+/*========================================================================*/
+/*========================================================================*/
+#discos{
+	position: relative; 
+	width: 100%;
+	height:	500px;
+	background: url(../assets/bg2.png)center center/ cover no-repeat;
+}
+#div_discos{
+	position: relative; 
+	width: 350px;
+	height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cantor{
+	position: absolute;
+	width: 175px;
+	height: 225px;
+	background: white;
+}
+
+#joji{
+	left: 0; 
+	top: 60px; 
+	animation: floating_joji 7s infinite;
+	background: url(../assets/joji_icon.png)center center/ cover no-repeat;
+}
+#jaden{
+	left: 170px;
+	top: 80px;
+	animation: floating_jaden 8s 1s infinite;
+	background: url(../assets/jaden_icon.png)center center/ cover no-repeat;
+}
+#nas{
+	left: 75px;
+	top: 200px;
+	animation: floating_nas 9s 1.5s infinite;
+	background: url(../assets/nas_icon.png)center center/ cover no-repeat;
+}
+
+@keyframes floating_joji {
+  50%{top: 15px;}
+}
+@keyframes floating_jaden {
+  50%{top: 40px;}
+}
+@keyframes floating_nas {
+  50%{top: 260px;}
+}
+
+/*========================================================================*/
+/*========================================================================*/
+
+#acervo{
+	width: 100%;
+	max-width: 1100px;
+	display: flex;
+	gap: 10px 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.desenho{
+	width: 250px;height: 250px; 
+	background: #ea042f;
+}
+#acervo_desc{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 350px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.desenho:nth-child(1){
+	background: url(../assets/ilustra/1.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(2){
+	background: url(../assets/ilustra/2.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(3){
+	background: url(../assets/ilustra/3.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(4){
+	background: url(../assets/ilustra/4.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(5){
+	background: url(../assets/ilustra/5.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(6){
+	background: url(../assets/ilustra/6.jpg)center center/ cover no-repeat;
+}
+.desenho:nth-child(7){
+	background: url(../assets/ilustra/7.jpg)center center/ cover no-repeat;
+}
+.desenho:nth-child(8){
+	background: url(../assets/ilustra/8.jpg)center center/ cover no-repeat;
+}
+.desenho:nth-child(9){
+	background: url(../assets/ilustra/9.jpg)center center/ cover no-repeat;
+}
+.desenho:nth-child(10){
+	background: url(../assets/ilustra/10.jpg)center center/ cover no-repeat;
+}
+.desenho:nth-child(11){
+	background: url(../assets/ilustra/11.png)center center/ cover no-repeat;
+}
+.desenho:nth-child(12){
+	background: url(../assets/ilustra/13.png)center center/ cover no-repeat;
+}
+
+
+.desenho:last-child{
+	margin-bottom: 100px;
+}
+/*========================================================================*/
+/*========================================================================*/
+
+#series_desc{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#series{
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	gap: 10px 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.capa{
+	position: relative;
+	width: 100px;
+	height: 140px;
+	background: red;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.capa:nth-child(1){
+	background: url(../assets/series/1.jpg)center center/ cover no-repeat;
+}
+.capa:nth-child(2){
+	background: url(../assets/series/2.jpeg)center center/ cover no-repeat;
+}
+.capa:nth-child(3){
+	background: url(../assets/series/3.jpg)center center/ cover no-repeat;
+}
+.capa:nth-child(4){
+	background: url(../assets/series/4.jpg)center center/ cover no-repeat;
+}
+.capa:nth-child(5){
+	background: url(../assets/series/5.jpg)center center/ cover no-repeat;
+}
+.capa:nth-child(6){
+	background: url(../assets/series/6.png)center center/ cover no-repeat;
+}
+.capa:nth-child(7){
+	background: url(../assets/series/7.jpg)center center/ cover no-repeat;
+}
+.capa:nth-child(8){
+	background: url(../assets/series/8.jpg)center center/ cover no-repeat;
+	margin-bottom: 50px;
+}
+.filtro{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ea042f;
+	opacity: 0.7;
+	
+	transition: opacity 0.2s linear;
+	mix-blend-mode: multiply;
+}
+.capa p{
+	font-family: 'Yantramanav', sans-serif;font-weight: 500;
+	color: white;
+	position: absolute;
+	transition: color 0.3s linear;
+	cursor: default;
+}
+
+
+/*========================================================================*/
+/*========================================================================*/
+
+#setup{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width:350px;
+	height:200px;
+	background: url(../assets/setup.png)center center/ cover no-repeat;
+	margin-bottom: 50px;
+}
+#setup button{
+	position: absolute;
+	top: 135px;
+	left: 25px;
+	width: 75px;
+	height: 60px;
+	border: 1px solid	black;
+	background: transparent;
+	cursor: pointer;
+	opacity: 0;
+}
+ #card{
+ 	padding: 15px 0 15px 30px;
+ 	width: 100%;
+ 	background: #ea042f;
+ }
+ #card h2{
+ 	font-size: 40px;
+ 	line-height: 20px;
+ 	letter-spacing: -3px;
+ 	font-family: 'Yantramanav', sans-serif;font-weight: 900;
+ 	color: white;
+ 	text-align: left;
+}
+#second{
+	color: #4f000f !important;
+	letter-spacing: -4px !important;
+	margin-bottom: 30px;
+}
+#social{
+	bottom: 10px;
+}
+#social i{
+	font-size: 20px;
+	color: white;
+}
+#social p{
+	font-size: 15px !important;
+	line-height: 25px;
+	letter-spacing: 0 !important;
+ 	font-family: 'Yantramanav', sans-serif;font-weight: 700;
+}
+.social_desc{
+	display: flex;
+	align-items: center;
+}
+.social_desc p{
+	cursor: default;
+	margin-left: 5px;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {width: 9px;}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 100px 100px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #d3d3d3;
+	border-radius: 100px 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #b1b1b1;}
+
+::selection {
+  color: white;
+  background: #ea042f;
+}
+
+
+/*
+.capa:hover p{
+	color: white;
+}
+.capa:hover .filtro{
+	opacity: 0.7;
+}
+*/

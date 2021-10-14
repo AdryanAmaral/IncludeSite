@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="code/stylesheet_index.css">
+	<link rel="icon" href="">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;500;700;900&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/97d94e17be.js" crossorigin="anonymous"></script>
+	<title>Adryan Amaral - Portfólio</title>
+</head>
+
+<body>
+	<div id="nav_bar">
+		<a href=""><h2>ADRYAN</h2></a>
+	</div>
+	<div id="banner_div">
+		<div id="banner">
+			<div id="chat_1" class="chat_balloon"><p>Olá, prazer, como se chama? &#128512;</p></div>
+			<div id="chat_2" class="chat_balloon"><p>Meu nome é</p> <input id="user_name" placeholder="'digite seu nome'" type="text" name=""></div>
+			<div id="chat_3" class="chat_balloon"><p id="demo"><span id="username"></span></p></div>
+		</div>
+	</div>
+	
+
+	<div id="perfil">
+		<div id="profile_pic"></div>
+		<h2>Eu me chamo Adryan!</h2>
+		<div id="text_gradient"><p>Meu hobbie preferido é desenhar, gosto de preparar playlists baseadas no meu mood, e sempre que chove eu assisto Garden of Words do diretor Makoto Shinkai, e...</p></div>
+		<div id="naoleio"></div>
+	</div>
+	<div id="series_desc">
+		<h2>Animes e Séries</h2>
+	</div>
+	<div id="series">
+		<div class="capa"><div class="filtro"></div><p>HUNTER X HUNTER</p></div>
+		<div class="capa"><div class="filtro"></div><p>ERASED</p></div>
+		<div class="capa"><div class="filtro"></div><p>BOKU NO HERO</p></div>
+		<div class="capa"><div class="filtro"></div><p>LOVE DEATH + ROBOTS</p></div>
+		<div class="capa"><div class="filtro"></div><p>BLACK MIRROR</p></div>
+		<div class="capa"><div class="filtro"></div><p>TSUREZURE CHILDREN</p></div>
+		<div class="capa"><div class="filtro"></div><p>BOJACK HORSEMAN</p></div>
+		<div class="capa"><div class="filtro"></div><p>DOROHEDORO</p></div>
+	</div>
+	<div id="musicas">
+		<h2>Gosto musical</h2>
+		<div id="musica_desc"><p>Musica é que nem rodízio de massas para mim, pego um pouco de cada, toma aí o lado esquerdo do fone e escuta comigo! (clica no adesivo ok)</p></div>
+		
+		<img src="assets/cassete.png" width="360" height="360" usemap="#image-map">
+		<map name="image-map">
+		    <area target="_blank" alt="" title="" href="https://open.spotify.com/playlist/4juv7eE4xRgAwJt94RU8Sr?si=30db6169feb644dd" coords="244,176,36" shape="circle">
+		</map>
+		<div id="discos">
+			<div id="div_discos">
+				<div class="cantor" id="joji"></div>
+				<div class="cantor" id="jaden"></div>
+				<div class="cantor" id="nas"></div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="acervo_desc">
+		<h2>Acervo</h2>
+		<div id="acervo_desc_p"><p>Quero mostrar também algumas de minhas ilustras, além de todas as outras que compõem este site.</p></div>
+	</div>
+	<div id="acervo">
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+		<div class="desenho"></div>
+	</div>
+	
+	<button onclick="topFunction()" id="goToTop" class="scroll-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+	<!--<div id="setup">
+		<button onclick="footer()"></button>
+		
+	</div>-->
+
+	<div id="card">
+		<div id="footer_logo">
+			<h2>ADRYAN</h2>
+			<h2 id="second">AMARAL</h2>
+		</div>
+		
+		<div id="social">
+			<div class="social_desc"><i class="fa-brands fa-github"></i> <p>https://github.com/AdryanAmaral</p></div>
+			<div class="social_desc"><i class="fa-brands fa-whatsapp"></i> <p>(88)99481-9679</p></div>
+			<div class="social_desc"><i class="fa-solid fa-at"></i> <p>adryanamaral0101@gmail.com</p></div>
+		</div>
+	</div>
+	<!--SCRIPT-->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+			function scrollWin() {
+  			window.scrollTo(0, 0);
+			}
+			$(document).scroll(function() {
+	  			var y = $(this).scrollTop();
+	  			if (y > 300) {
+	    			$('.scroll-top').fadeIn();
+	  			} else {
+	    			$('.scroll-top').fadeOut();
+	  			}
+			});
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			var i = 0;
+			var txt1 = 'É um prazer conhece-lo, ';
+			var txt = ', vou te mostrar um pouco sobre mim :)';
+			var speed = 50;
+
+			function typeWriter() {
+				var nome = document.getElementById("user_name").value;
+				var txt1 = 'É um prazer conhecê-lo, ';
+				txt2 = ', vou te mostrar um pouco sobre mim :)';
+				var txt;
+				txt = txt1.concat(nome,txt2);
+				if (i < txt.length) {
+					document.getElementById("demo").innerHTML += txt.charAt(i);
+					i++;
+					setTimeout(typeWriter, speed);
+				}
+			}
+
+
+			const inputEle = document.getElementById('user_name');
+			inputEle.addEventListener('keyup', function(e){
+			  var key = e.which || e.keyCode;
+			  if (key == 13) {
+		    $("#chat_3").show(100);
+		    typeWriter();
+		    setTimeout(function() {window.scroll(0, 300);}, 5000);  
+		  }
+		});
+	</script>
+</body>
+</html>
